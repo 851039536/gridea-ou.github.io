@@ -1,22 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://851039536.github.io/gridea-ou.github.io/</id>
-    <title>Gridea</title>
-    <updated>2021-09-03T02:13:19.333Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://851039536.github.io/gridea-ou.github.io/"/>
-    <link rel="self" href="https://851039536.github.io/gridea-ou.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://851039536.github.io/gridea-ou.github.io/images/avatar.png</logo>
-    <icon>https://851039536.github.io/gridea-ou.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
-    <entry>
-        <title type="html"><![CDATA[前端开发]]></title>
-        <id>https://851039536.github.io/gridea-ou.github.io/post/qian-duan-kai-fa/</id>
-        <link href="https://851039536.github.io/gridea-ou.github.io/post/qian-duan-kai-fa/">
-        </link>
-        <updated>2021-09-03T02:10:56.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="前端开发">前端开发🤓</h1>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>前端开发 | Gridea</title>
+<meta name="description" content="温故而知新">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://851039536.github.io/gridea-ou.github.io//favicon.ico?v=1630635194116">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://851039536.github.io/gridea-ou.github.io//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://851039536.github.io/gridea-ou.github.io/">
+        <img class="avatar" src="https://851039536.github.io/gridea-ou.github.io//images/avatar.png?v=1630635194116" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://851039536.github.io/gridea-ou.github.io/">
+        <h1 class="site-title">Gridea</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+          <h2 class="post-title">前端开发</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-09-03</span>
+            
+          </div>
+          <div class="post-content">
+            <h1 id="前端开发">前端开发🤓</h1>
 <h2 id="html">html</h2>
 <h3 id="html和css标签命名规则">HTML和CSS标签命名规则</h3>
 <h4 id="文件命名">文件命名</h4>
@@ -2904,6 +2974,50 @@ A和B之间是 多对多 关系，则建立一张中间表，把AB两表中的�
 <p>听名字就能理解，被非空约束的列，在插入值时必须非空。</p>
 <p>在MySQL中违反非空约束，不会报错，只会有警告.</p>
 <h2 id="版本更新">版本更新</h2>
-]]></content>
-    </entry>
-</feed>
+
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">温故而知新</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://851039536.github.io/gridea-ou.github.io//atom.xml" target="_blank">RSS</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
